@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">AppProdutoMenuListar</string>
+
+    <string name="pronome">DECSRIÇÃO COMPUTADOR</string>
+    <string name="promemoria"> MEMÓRIA COMPUTADOR</string>
+    <string name="prohd"> HD COMPUTADOR</string>
+    <string name="promarca"> MARCA COMPUTADOR</string>
+    <string name="promodelo"> MODELO COMPUTADOR</string>
+    <string name="btbsalvar">SALVAR DADOS</string>
+    <string name="btnfiltrar">FILTRAR DADOS</string>
+    <string name="listagemProdutos">LISTAGEM DE PRODUTOS</string>
+    <string name="cadProduto">CADASTRO DE PRODUTOS</string>
+    <string name="title_activity_controller_listar_produtos">ControllerListarProdutos</string>
+    <string name="nomePesquisa">DIGITE O NOME PARA FILTRO</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_controller_filtrar_dados">ControllerFiltrarDados</string>
+    <string name="action_settings">Voltar para lista</string>
+</resources>

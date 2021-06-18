@@ -1,0 +1,17 @@
+<?php
+include("checar_session.php");
+?>
+<html><head>
+<title> Menu </title>
+</head>
+<body>
+<div align="center"> <h3>Menu Principal </h3>
+<div align="right"><?php echo "Bem vindo usu&aacute;rio: ".$_SESSION['fucapi'][0];?></div>
+<a href="cadastro.php"> CADASTRAR NOVA PESSOA </a>
+<br/><br/>
+<a href="listagem.php"> LISTAGEM DE PESSOAS </a>
+<br/><br/>
+<a href="?acao=logout"> SAIR DO SISTEMA </a>
+</div>
+</body>
+</html>

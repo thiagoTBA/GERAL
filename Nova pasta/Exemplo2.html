@@ -1,0 +1,39 @@
+<html><head>
+<title> Trabalhando com Formul&aacute;rios </title>
+</head>
+<body>
+
+<form name ="formcad" method ="post" action ="">
+<div align ="center"> CADASTRO DE ALUNOS </div>
+<br/><br/>
+Nome <input type="test" name="nome" id="nome" size="40" maxlength="40"/>
+<br/><br/>
+Sexo <input type="radio" name="sexo" id="sexo" value="M" checked> Masc.
+<input type="radio" name="sexo" id="sexo" value="F"> Fem.
+<br/><br/>                                               <!--TEXTO-->
+Cursos
+<input type="checkbox" name="cursos[]" id="cursos[]" value="1"/> PHP
+<input type="checkbox" name="cursos[]" id="cursos[]" value="2"/> JAVA
+<input type="checkbox" name="cursos[]" id="cursos[]" value="3"/> CSS
+<br/><br/>
+Estado Civil<select name="estcivil" id="estcivil">
+<option value="1">Solteiro(a)</option>
+<option value="2">Casado(a)</option>
+<option value="3">Enrolado(a)</option>
+<option value="4">Indeciso(a)</option>
+</select>
+<br/><br/>
+Deixe sua memsagem: <br/>
+<textarea name="falecon" id="falecon" rows="4" cols="20"> Deixe sua mensagem aqui
+</textarea><br/><br/>
+Senha <input type="password" name="senha" id="senha" size="20"maxlength="40"/>
+<br/><br/>
+<div align ="center">
+<input type="submit" name ="btsalvar" id="btsalvar" value="Salvar"/>
+<input type="reset" name ="btlimpar" id="btlimpar" value="Limpar campos"/>
+<input type="button" name ="btlink" id="btlink" value="Ir para Google" onclick="location='http://www.google.com.br'"/>
+</div>
+<br/><br/>
+</form>
+</body>
+</html>

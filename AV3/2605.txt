@@ -1,0 +1,66 @@
+create table tabcadastro(
+matricula varchar(35) not null,
+nome varchar(100),
+rg varchar(20),
+cpf varchar(14),
+comp_residencia varchar (100),
+telefone varchar(15),
+PRIMARY KEY(matricula));
+
+create table tabgenero(
+sequencia integer not null,
+genero varchar(20),
+faixa varchar(20),
+PRIMARY KEY (sequencia));
+
+create table tabtipodesconto(
+sequencia integer not null,
+qtde integer,
+valor decimal(10,2),
+PRIMARY KEY(sequencia));
+
+create table tabtipomulta(
+sequencia integer not null,
+qtde integer,
+valor decimal(10,2),
+descricao varchar(50),
+PRIMARY KEY(sequencia));
+
+create table tabvalores(
+cod integer not null,
+tipo varchar(50),
+valor decimal(10,2),
+PRIMARY KEY(cod));
+
+create table tabfilmes(
+cod integer not null,
+seq_genero integer not null REFERENCES tabgenero(sequencia) ON UPDATE CASCADE ON DELETE RESTRICT,
+cod_valores integer not null REFERENCES tabvalores(cod) ON UPDATE CASCADE ON DELETE RESTRICT,
+filme varchar(100),
+duracao varchar(10),
+qtde integer,
+PRIMARY KEY(cod));
+
+create table tabatrasos(
+sequencia integer not null,
+seq_multa integer not null REFERENCES tabtipomulta(sequencia) ON UPDATE CASCADE ON DELETE RESTRICT,
+mat_cadastro varchar(35) not null REFERENCES tabcadastro(matricula) ON UPDATE CASCADE ON DELETE RESTRICT,
+diasatraso integer,
+PRIMARY KEY(sequencia));
+
+create table tabaluguel(
+sequencia integer not null,
+seq_tipodesconto integer not null REFERENCES tabtipodesconto(sequencia) ON UPDATE CASCADE ON DELETE RESTRICT,
+cod_filmes integer not null REFERENCES tabfilmes(cod) ON UPDATE CASCADE ON DELETE RESTRICT,
+mat_cadastro varchar(35) not null REFERENCES tabcadastro(matricula) ON UPDATE CASCADE ON DELETE RESTRICT,
+data_retirada date,
+data_prevista date,
+PRIMARY KEY(sequencia));
+
+create table tabpagamento(
+sequencia integer not null,
+mat_cadastro varchar(35) not null REFERENCES tabcadastro(matricula) ON UPDATE CASCADE ON DELETE RESTRICT,
+seq_multa integer not null REFERENCES tabtipomulta(sequencia) ON UPDATE CASCADE ON DELETE RESTRICT,
+seq_tipodesconto integer not null REFERENCES tabtipodesconto(sequencia) ON UPDATE CASCADE ON DELETE RESTRICT,
+cod_valores integer not null REFERENCES tabvalores(cod) ON UPDATE CASCADE ON DELETE RESTRICT,
+PRIMARY KEY(sequencia));

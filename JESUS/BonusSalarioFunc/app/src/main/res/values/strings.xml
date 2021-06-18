@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">BonusSalarioFunc</string>
+
+    <string name="nomeFunc">NOME DO FUNCIONÁRIO</string>
+    <string name="cpfFunc">CPF DO FUNCIONÁRIO</string>
+    <string name="foneFunc">FONE DO FUNCIONÁRIO</string>
+    <string name="salFunc">SALÁRIO DO FUNCIONÁRIO</string>
+    <string name="bonusFunc">BÔNUS DO FUNCIONÁRIO</string>
+
+    <string name="cadFunc">CADASTRO FUNCIONÁRIOS</string>
+    <string name="btnsalvar">CADASTRAR FUNCIONÁRIOS</string>
+    <string name="title_activity_controller_listar_funcionario">ControllerListarFuncionario</string>
+
+    <string name="listagemFunc">LISTAGEM DE FUNCIONÁRIOS!</string>
+</resources>

@@ -1,0 +1,459 @@
+/***
+--------------------------------------------------------------------------------
+An Easy GuestBook 0.2
+     
+	 This file is part of An Easy GuestBook.
+
+    An Easy GuestBook is free software; you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation; either version 2 of the License, or
+    (at your option) any later version.
+
+    An Easy GuestBook is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with An Easy GuestBook; if not, write to the Free Software
+    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+
+
+This program is provided under the GNU/GPL license.
+See LICENSE file for more informations
+
+Website: http://www.students3k.com
+Author: Karthikh Venkat
+
+
+--------------------------------------------------------------------------------
+*/
+
+
+
+
+body {
+	text-align:center;
+	width:100%;
+
+}
+/* Part 1 
+   1. style sheet definition for top navigation which includes GuestBook Heading
+   2. Navigation Link for adding entry and back to home page
+  
+*/
+
+/* Important Note for changing the style defined here 
+ 	Width of following blocks should be same 
+	div.main_gb
+	div.oddentry
+	div.evenentry	
+	another imp note 
+	div.topquestion.width + div.topquestionresponse.width= div.main_gb
+	div.oddquestion.width + div.oddquestionresponse.width= div.main_gb
+	div.evenquestion.width + div.evenquestionresponse.width= div.main_gb
+	
+	
+*/
+
+div.main_gb{
+	
+ 	margin: 0px;
+    padding: 0px; 
+	width:600px;
+	
+
+}
+
+
+	div.top_nav {
+		
+
+	}
+	
+	
+	div.gb_title {
+				
+				background-color:#3853A5;
+				color:#ffffff;
+				text-align:center;
+				font-size:18px;
+	}
+
+     div.top_nav_link {
+
+
+     }
+
+     .title_link {
+
+     }
+
+/* End of part 1 */
+
+/* Part 2
+	Style definition for 
+	1.Page Navigation links to jump to different pages while viewing entries
+*/
+    div.page_nav {
+		 text-align:left;
+		
+
+	}
+     
+	 
+	div.page {
+		float:left;
+		
+
+	}
+	
+	div.page_no {
+		
+
+	}
+    
+	
+
+    a.pages{
+		color: #1185CF;
+		font-size:10px;
+		text-decoration:underline;
+
+    }
+
+	a.current {
+		color: #006600;
+		font-size:20px;
+		text-decoration:none;
+    }	
+/*
+ End of Part 2
+*/
+
+
+/* Part 3 
+   Style Definition for add_entry form 
+  */
+
+	.add_entry{
+		background-color:#F2F5F7;
+	}
+
+	div.add_entry {
+		
+	    width:inherit;
+		border-color:#75a3ed;
+		border-width:0px;
+		border-bottom-style:solid;
+		border-left-style:solid;
+		border-right-style:solid;
+		border-top-style:solid;
+		margin-top:6px;
+	}
+
+
+	div.add_row {
+	
+	}	
+
+	.label{ 
+		color:#3853A5; 
+		font: 14px/22px Georgia, "Calisto MT", "Times New Roman", Times, serif;
+		text-align:left;
+		background-color:#F2F5F7;
+		float:left;
+		width:150px;
+	}
+
+	.value{ 
+		color:#000000;
+		text-align:left;
+		font: 14px/22px Georgia, "Calisto MT", "Times New Roman", Times, serif;
+		background-color:#F2F5F7;
+	}
+
+
+/* End of Part 3 
+*/
+
+
+
+
+/* Part 5 
+	Style Definition for displaying guestbook entries 
+*/
+
+	td.title {
+		background-color:#3853A5;
+		color:#ffffff;
+		font-size:16px;
+		text-align:center;
+	}
+
+
+
+
+	div.display_entries {
+	
+		border-color:#7e0008;
+		border-width: 0px;
+		border-bottom-style:solid;
+		border-left-style:solid;
+		border-right-style:solid;
+		border-top-style:solid;
+		margin-top:6px;
+		width:inherit;
+		
+		
+		
+	}
+
+	div.evenentry  {
+
+    	border-color:#75a3ed;
+		border-width: 1px;
+		border-bottom-style:solid;
+		border-left-style:solid;
+		border-right-style:solid;
+		border-top-style:solid;
+		background-color:#f2f5f7;
+		margin-top:6px;
+		margin-left:6px;
+		
+		width:600px;
+	}
+
+
+	div.oddentry  {
+
+    
+		border-color:#BB65B6;
+		border-width: 1px;
+		border-bottom-style:solid;
+		border-left-style:solid;
+		border-right-style:solid;
+		border-top-style:solid;
+		margin-top:6px;
+		margin-left:6px;
+		background-color:#F2F5F7;
+		
+	    width:600px;
+	}
+    
+	 
+    div.oddentry_top_row{
+		color:#3853A5;
+		font: 14px/22px Georgia, "Calisto MT", "Times New Roman";
+		margin-top:3px;
+		width:inherit;
+		
+	}
+
+	div.evenentry_top_row{
+		color:#3853A5;
+		font: 14px/22px Georgia, "Calisto MT", "Times New Roman";
+		margin-top:3px;
+		width:inherit;
+		
+	}
+
+	div.even{
+		margin-top:3px;
+		width:inherit;
+		
+	}
+
+	div.odd{
+	margin-top:3px;
+		background-color:#F2F5F7;
+		width:inherit;
+	}
+
+	.topquestion { 
+		font-family: Georgia,Helvetica, sans-serif;
+		color: #3853A5 ;
+		font-size:12px;
+		width:150px;
+		text-align:left;
+		float:left;
+		
+	}
+
+	.topresponse { 
+		font-family: Georgia,Helvetica, sans-serif;
+		color:#3853A5;
+		font-size:12px;
+		width:445px;
+		text-align:left;
+		
+	}
+
+
+	.evenquestion{ 
+	
+		font-family:Georgia,Helvetica, sans-serif;
+		color:#666666;
+		font-size:12px;
+		width:150px;
+		float:left;
+		text-align:left;
+		
+    }
+
+	.evenresponse{ 
+		font-family: Georgia,Helvetica, sans-serif;
+		font-size:12px;
+		width:445px;
+		text-align:left;
+ 
+	}
+
+	.oddquestion{ 
+		font-family:Georgia,Helvetica, sans-serif;
+		color:#666666;
+		font-size:12px;
+		width:150px;
+		float:left;
+		text-align:left;
+    }
+
+	.oddresponse{ 
+		font-family: Georgia,Helvetica, sans-serif;
+		color: #000000;
+		font-size:12px;
+		width:445px;
+		text-align:left;
+	}
+
+	
+
+	a.link1, a:visited{
+		color:blue;
+		text-decoration: none;
+		
+	}
+
+	a:hover{
+		color:blue;
+		text-decoration: underline;
+	}
+
+
+/* End of part 5 */
+
+
+/* Part 6
+	Style definition for form elements like input text boxes and buttons 
+	these style will be used on all forms e.g. add_entry, edit_entry, admin forms
+
+	
+*/
+
+
+
+INPUT.btn {position : static; overflow : visible; width : 90px; font-size : 8pt;  font-family:Verdana,  Helvetica, sans-serif; font-weight:bold;}
+
+INPUT.btnl {border: 1px #ffffff outset; color: #000000; font-family: Arial; background-color: #f3f3f3; font-size: 90%; margin-top: 6px; font-weight: bold;}
+
+.text {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  color: #000000;
+  background-color: #F5F5F5;
+  border: 1px #CCCCCC solid;
+
+}
+
+/*
+	End of part 6 form elements
+
+*/
+
+td.tbl4 { text-align: left;}
+th.tbl4 { text-align: left;}
+div.message{ color: #ff0000; font-family:Arial, Helvetica, sans-serif; font-size:14px; text-align: center;}
+
+
+
+
+
+
+.evenname{ 
+	font-family:Georgia, "Times New Roman", Times, serif; color:#615F9A; font-size:12px;
+}
+.oddname{ 
+	font-family:Georgia, "Times New Roman", Times, serif; color:#E7EDF7; font-size:12px;
+
+}
+
+.title {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: large;
+	color: #000099;
+
+}
+
+.error {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: large;
+	color: red;
+
+}
+
+
+
+/* Style Definition for admin page
+
+
+*/
+
+	/* sub part 1 
+	Style definition for edit_entry form 
+	*/
+
+		table.edit_entry {
+			background-color:#75a3ed;
+			width:600px;
+			border:1px;
+		}
+
+
+	/* end of sub part 1 */
+
+   
+    /* sub part 2 
+	Style definition for list of all entries on admin page
+	*/
+
+	table.top_nav_admin {
+		width:100%;
+	
+
+	}
+
+	.admin_list {
+		width:100%; 
+		border-color:#666666;
+		border-width:1px;
+		border-bottom-style:solid;
+		border-left-style:solid;
+		border-right-style:solid;
+		border-top-style:solid;
+		margin-top:6px;
+		background-color:#75a3ed;
+	}
+
+	tr.admin_list_top{
+		background-color:#75a3ed;
+		color:#ffffff;
+	}
+
+
+	tr.admin_list_data{
+		background-color:#F2F5F7;
+	}
+	/* End of sub part 2 */
+
+/* End of style definitions for admin pages
+*/

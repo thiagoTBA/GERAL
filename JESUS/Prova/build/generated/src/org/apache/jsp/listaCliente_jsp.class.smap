@@ -1,0 +1,16 @@
+SMAP
+listaCliente_jsp.java
+JSP
+*S JSP
+*F
++ 0 listaCliente.jsp
+listaCliente.jsp
+*L
+5,16:46
+21,3:63
+23,2:66
+25,2:68,3
+27,2:74
+29,2:77
+30,6:79
+*E

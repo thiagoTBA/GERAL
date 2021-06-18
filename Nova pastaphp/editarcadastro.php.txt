@@ -1,0 +1,63 @@
+<?php
+include("checar_session.php");
+include("funcoes.php");
+
+
+if ($destino == 'salvar')
+{
+  $sqltxt = "UPDATE tabcadastros SET nome = '$nome',
+  idade = $idade, salario = '$salario' where id = $idalterar";
+  $sql = pg_query($sqltxt);
+  if ($sql)
+  {
+     echo "<script>alert('Registros editados  com sucesso!');</script>";
+     echo "<script>location='listagem.php';</script>";
+  }
+  else
+  {
+    echo "OCORREU ALGUM ERRO NO INSERT.<br/>Repasse o SQL
+    abaixo para o administrador do sistema:<br/>".$sqltxt;
+    exit;
+  }
+}
+
+$sql = pg_query("select * from tabcadastros where id = $id");
+$vetor = pg_fetch_array($sql);
+
+?>
+<html>
+<head>
+<title> Edi&ccedil;&atilde;o de Cadastro </title>
+</head>
+<body onload="document.form1.nome.focus();">
+<form name="form1" method="post" action="?destino=salvar">
+<table width="60%" align="center" border="1">
+<tr>
+<td colspan="2" align="center"><h3>EDI&Ccedil;&Atilde;O DE CADASTRO DE PESSOAS</h3></td>
+</tr>
+<tr>
+<td>ID</td>
+<td><input type="text" name="idalterar" id="idalterar" size="4" value="<?php echo $vetor['id'];?>"/></td>
+</tr>
+<tr>
+<td>NOME</td>
+<td><input type="text" name="nome" id="nome" value="<?php echo $vetor['nome']; ?>" required size="60"></td>
+</tr>
+<tr>
+<td>IDADE</td>
+<td><input type="text" name="idade" id="idade" value="<?php echo $vetor['idade']; ?>" size="5"></td>
+</tr>
+<tr>
+<td>SAL&Aacute;RIO</td>
+<td><input type="text" name="salario" id="salario" value="<?php echo $vetor['salario']; ?>" size="10"></td>
+</tr>
+<tr>
+<td colspan="2" align="center">
+<input type="submit" name="btsalvar" id="btsalvar" value="Salvar"/>
+<input type="button" name="btvoltar" id="btvoltar" onclick="location='menu.php'" value="Voltar"/>
+</td>
+</tr>
+</table>
+</form>
+</body>
+</html>

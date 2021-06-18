@@ -1,0 +1,54 @@
+<?php
+//exemplophp.php
+/*
+DICAS: Em PHP não precisa especificar o tipo de variável.
+Tipagem Dinamica!!!
+*/
+$nome = "Marcelo Mendes";
+$idade = 35;
+$salario = 3000;
+$peso = 78.6;
+$datanascimento = "10/06/2015";
+$datadia = date('d/m/Y');
+$n1 = 5;
+$n2 = 5;
+$total = $n1 + $n2;
+echo $nome."<br/>".$idade."<br/>Total = ".$total;
+echo "<br/>";
+if ($total < 10)
+{
+   echo "TOTAL É MENOR QUE 10";
+}
+  else if ($total == 10)
+  {
+   echo "TOTAL É EXATAMENTE IGUAL A 10";
+  }
+     else
+     {
+      echo "TOTAL É MAIOR QUE 10";
+     }
+
+echo "<br/>EXEMPLO DO WHILE<br/>";
+
+//exemplo do laço while
+$i = 1;
+while ($i <= 10)
+{
+  echo $i." ";
+  $i++;
+}
+
+echo "<br/>EXEMPLO DO FOR<br/>";
+//exemplo do laço for
+for($i=1;$i<=15;$i++)
+{
+  echo $i."<br/>";
+}
+
+echo "<br/>EXEMPLO DO DO WHILE<br/>";
+$i = 1;
+do {
+  echo $i."<br/>";
+  $i++;
+} while ($i<=20);
+?>

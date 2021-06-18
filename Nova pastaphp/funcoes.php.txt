@@ -1,0 +1,28 @@
+<?php
+//funcoes.php
+include("conecta.php");
+
+function getUltimoIDPessoa()
+{
+  $sql = pg_query("select id from tabcadastros order by
+  id desc  limit 1");
+  $vetor = pg_fetch_array($sql);
+  return $vetor[0];
+}
+
+function SelectBairros()
+{
+?>
+<select name="id_bairro" id="id_bairro">
+<option value="0">Selecione o Bairro</option>
+<?php
+$sql = pg_query("select * from tabbairros order by descricao");
+while($vetor = pg_fetch_array($sql)) {
+?>
+<option  value="<?php echo $vetor['id']; ?>">
+<?php echo $vetor['descricao'];?></option>
+<?php  } /*fechando o while */ ?>
+</select>
+<?php
+} //fechando a function
+?>

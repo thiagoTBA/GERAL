@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Prova</string>
+
+    <string name="Nome">Nome</string>
+    <string name="CPF">CPF</string>
+    <string name="fone">fone</string>
+    <string name="salario">salario</string>
+    <string name="bomus">bomus</string>
+    <string name="btSalvar">Salvar</string>
+    <string name="listView">Listagem</string>
+    <string name="action_settings">Settings</string>
+</resources>
+
+
+
+
+
+
+
+

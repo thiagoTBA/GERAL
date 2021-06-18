@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Escola</string>
+
+    <string name="alunome">NOME DO ALUNO</string>
+    <string name="alucpf">CPF DO ALUNO</string>
+    <string name="alurg">RG DO ALUNO</string>
+    <string name="alufone">FONE DO ALUNO</string>
+    <string name="aluend">ENDEREÇO ALUNO</string>
+    <string name="btnsalvar">Salvar</string>
+    <string name="listaaluno">Listagem de Alunos</string>
+    <string name="action_settings">Settings</string>
+</resources>

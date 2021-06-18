@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Aula2MCI</string>
+
+    <string name="nomefunc">NOME DO FUNCIONARIO</string>
+    <string name="fonefunc">FONE DO FUNCIONARIO</string>
+    <string name="btnsalvarfunc">SALVAR</string>
+    <string name="btnlimpar">LIMPAR CAMPOS</string>
+    <string name="listaFunc">LISTAGEM DE FUNCIONARIOS</string>
+    <string name="action_settings">Settings</string>
+</resources>

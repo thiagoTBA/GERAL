@@ -1,0 +1,63 @@
+<html><head>
+<title> Cadastro de Pessoas </title>
+<link href="fucapi.css" rel="stylesheet" type="text/css"/>
+<script>
+function ValidarCampos()
+{
+if  (document.form1.nome.value == '')
+{
+    alert('ERRO: O campo nome deve ser preenchido!');
+    document.form1.nome.focus();
+    return false;
+}
+if  (document.form1.idade.value == '')
+{
+    alert('ERRO: O campo idade deve ser preenchido!');
+    document.form1.idade.focus();
+    return false;
+}
+if  (document.form1.estcivil.value == '0')
+{
+    alert('ERRO: O campo estcivil deve ser preenchido!');
+    document.form1.estcivil.focus();
+    return false;
+}
+return true;
+}
+</script>
+<div align="center"> Cadastro de Pessoas</div>
+<table  width="35%" align="center" border="1" class="fucapi">
+<tr>
+<td  colspan="2" align="center" face ="Copperplate Gothic Bold" >  CADASTRO DE PESSOAS </td>
+</tr>
+<form name ="form1" method ="post" onsubmit="return ValidarCampos();" action ="">   <!--onsubmit - verifica a função antes de enviar o formulário-->
+<tr>
+<td >NOME:</td>
+<td > <input type="text" name="nome" id="nome" size="40" maxlength="40"/></td>
+</tr>
+<td >IDADE:</td>
+<td > <input type="text" name="idade" id="idade" size="2" maxlength="2"/></td>
+</tr>
+<tr>
+<td >SEXO:</td>
+<td ><input type="radio" name="sexo" id="sexo" value="M" checked> Masc.
+<input type="radio" name="sexo" id="sexo" value="F"> Fem.
+</tr>
+<tr>
+<td >ESTADO CIVIL:</td>
+<td ><select name="estcivil" id="estcivil">
+<option value="0">..::SELECIONE::..</option>
+<option value="1">Solteiro(a)</option>
+<option value="2">Casado(a)</option>
+<option value="3">Enrolado(a)</option>
+<option value="4">Indeciso(a)</option>
+</tr>
+<tr>
+<td  colspan ="2"><div align ="center">
+<input type="submit" name ="btsalvar" id="btsalvar" value="Salvar"/>
+<input type="button" name ="btlink" id="btlink" value="Sair" onclick="location='http://www.google.com.br'"/>
+</tr>
+</form>
+</body>
+</html>
+

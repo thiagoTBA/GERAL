@@ -1,0 +1,67 @@
+<?php
+include("checar_session.php");
+include("funcoes.php");
+
+if ($_SESSION['fucapi'][1] != 0)
+{
+  echo "<script>alert('Voce nao está logado como adm.');</script>";
+  echo "<script>location='menu.php';</script>";
+  exit;
+}
+
+if ($destino == 'salvar')
+{
+  $proxID = getUltimoIDPessoa() + 1;
+  $sqltxt = "INSERT INTO tabcadastros (id,nome,idade,salario,id_bairro)
+  values ($proxID,'$nome',$idade,'$salario',$id_bairro)";
+  $sql = pg_query($sqltxt);
+  if ($sql)
+  {
+     echo "<script>alert('Registros salvo com sucesso!');</script>";
+     echo "<script>location='cadastro.php';</script>";
+  }
+  else
+  {
+    echo "OCORREU ALGUM ERRO NO INSERT.<br/>Repasse o SQL
+    abaixo para o administrador do sistema:<br/>".$sqltxt;
+    exit;
+  }
+}
+
+?>
+<html>
+<head>
+<title> Conectando PHP com Postgres</title>
+</head>
+<body onload="document.form1.nome.focus();">
+<form name="form1" method="post" action="?destino=salvar">
+<table width="60%" align="center" border="1">
+<tr>
+<td colspan="2" align="center"><h3>CADASTRO DE PESSOAS</h3></td>
+</tr>
+<tr>
+<td>NOME</td>
+<td><input type="text" name="nome" id="nome" required size="60"></td>
+</tr>
+<tr>
+<td>IDADE</td>
+<td><input type="text" name="idade" id="idade" size="5"></td>
+</tr>
+<tr>
+<td>SAL&Aacute;RIO</td>
+<td><input type="text" name="salario" id="salario" size="10"></td>
+</tr>
+<tr>
+<td>Selecione o Bairro</td>
+<td><?php echo SelectBairros(); ?></td>
+</tr>
+<tr>
+<td colspan="2" align="center">
+<input type="submit" name="btsalvar" id="btsalvar" value="Salvar"/>
+<input type="button" name="btvoltar" id="btvoltar" onclick="location='menu.php'" value="Voltar"/>
+</td>
+</tr>
+</table>
+</form>
+</body>
+</html>

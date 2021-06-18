@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2018
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Biblioteca", "Biblioteca.csproj", "{AF9DCC2B-9A31-4EA4-BB7A-BF9812E00681}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AF9DCC2B-9A31-4EA4-BB7A-BF9812E00681}.Debug|x86.ActiveCfg = Debug|x86
+		{AF9DCC2B-9A31-4EA4-BB7A-BF9812E00681}.Debug|x86.Build.0 = Debug|x86
+		{AF9DCC2B-9A31-4EA4-BB7A-BF9812E00681}.Release|x86.ActiveCfg = Release|x86
+		{AF9DCC2B-9A31-4EA4-BB7A-BF9812E00681}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {00B13828-796F-42B8-B61E-C03ED04C8494}
+	EndGlobalSection
+EndGlobal

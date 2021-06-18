@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 09/11/2015 08:22:28 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="model.beans.Dependentes" table="dependentes" catalog="cliente" optimistic-lock="version">
+        <id name="depcod" type="java.lang.Integer">
+            <column name="depcod" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="cliente" class="model.beans.Cliente" fetch="select">
+            <column name="depclicod" not-null="true" />
+        </many-to-one>
+        <property name="depnome" type="string">
+            <column name="depnome" length="100" />
+        </property>
+        <property name="depcpf" type="java.lang.Integer">
+            <column name="depcpf" />
+        </property>
+        <property name="deprg" type="java.lang.Integer">
+            <column name="deprg" />
+        </property>
+        <property name="depfone" type="string">
+            <column name="depfone" length="20" />
+        </property>
+        <property name="datanasc" type="date">
+            <column name="datanasc" length="10" />
+        </property>
+        <property name="datainclusao" type="timestamp">
+            <column name="datainclusao" length="19" />
+        </property>
+        <property name="depsexo" type="string">
+            <column name="depsexo" length="5" />
+        </property>
+        <set name="enderecos" table="endereco" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="eddepcod" not-null="true" />
+            </key>
+            <one-to-many class="model.beans.Endereco" />
+        </set>
+    </class>
+</hibernate-mapping>

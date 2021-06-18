@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">EverAlterarProduto</string>
+
+    <string name="pronome">Nome Do Produto</string>
+    <string name="btnsalvar">SALVAR</string>
+    <string name="Listap">Listando Produto</string>
+    <string name="Listagemdeprodutossss">Listagem De Produtos</string>
+
+</resources>

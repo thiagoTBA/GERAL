@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 09/11/2015 08:22:28 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="model.beans.Cliente" table="cliente" catalog="cliente" optimistic-lock="version">
+        <id name="clicod" type="java.lang.Integer">
+            <column name="clicod" />
+            <generator class="identity" />
+        </id>
+        <property name="clinome" type="string">
+            <column name="clinome" length="100" />
+        </property>
+        <property name="clirg" type="java.lang.Integer">
+            <column name="clirg" />
+        </property>
+        <set name="dependenteses" table="dependentes" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="depclicod" not-null="true" />
+            </key>
+            <one-to-many class="model.beans.Dependentes" />
+        </set>
+    </class>
+</hibernate-mapping>

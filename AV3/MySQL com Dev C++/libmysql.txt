@@ -1,0 +1,2 @@
+Copie a libmysql e coloque-a na sua pasta windows/system32 do seu windows. 
+Basta descompactar a pasta, pegar a DLL e colar na sua windows\system32

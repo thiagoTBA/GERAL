@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">AppCadPincel</string>
+    <string name="menuCadPincel">CADASTRO DE PINCEL</string>
+    <string name="txtmarca">MARCA DO PINCEL</string>
+    <string name="txtcor">COR DO PINCEL</string>
+    <string name="txtvalor">VALOR DO PINCEL</string>
+    <string name="txtdesc">DESCRIÇÃO DO PINCEL</string>
+    <string name="btnsalvar">SALVAR DADOS</string>
+    <string name="listaDados">LISTAGEM DE DADOS</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_controller_listar_pincel">ControllerListarPincel</string>
+
+    <string name="hello_world">Hello world!</string>
+</resources>

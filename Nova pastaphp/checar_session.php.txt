@@ -1,0 +1,14 @@
+<?php 
+session_start();
+//checar_session.php
+    if (!isset($_SESSION['fucapi']))
+    {
+    header("Location: index.php");
+    }
+
+	if ($acao == 'logout')
+	{
+	session_destroy();
+	header("Location: index.php");
+	}
+?>

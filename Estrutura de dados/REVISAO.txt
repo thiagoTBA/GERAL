@@ -1,0 +1,35 @@
+revisao
+2 slides
+e os codigos
+
+
+segnificados
+
+
+VOID= retorna para um funcao vazia
+(void)=esvazia parametro da funcao
+NULL=testa se esta vazio o valor
+->=recebe um valor
+Lista encadeado=codigos parecidos que se aproximam no mesmo raciocinio
+exibe(ver no ccodigo,,217)=checa se a lista esta vazia
+exibe_dados=alem checar se a lista esta vazia se ouver dados ele ira exibilo
+ 221--for (";" dados=so para ter parametro para o `for`
+241--exibe_tamanho=exibe o tamanho  em bytes os `dados`
+if (!checa_vazio(principal))
+!=pergunta se para o progama se nega se a dados
+principal = deleta_dados(principal,1);=deleta dados 1 =deleta o primeiro dado
+principal = deleta_dados(principal,1);=deleta dados 2 =dele o ultimo dado
+(free)=limpa a funcao,ao limpar ele tbm deleta o dado apagando o valor salvo
+delbusca=ele primeiro busca adicionado a um laco pra depois ele deletar
+delbusca_dados=acho o dado e o deleta
+strcmp=comprar strings(STRCMP,STRing-CoMPare)
+347--`achou==1`=se o valor buscado for achado ele apaga a primeira casa de dados salvo,em 
+seguida  usa o strcmp para comparar se a algo e acione o ponteiro para o proximo
+busca=busca um elemento salvo na lista,primeiro checando se a alista esta vazia nao estando 
+ele busca
+busca_dados=caso a lista esteja com elemento ele busca elemento e o exibe para o buscador
+checa_vazia=checa se  a lista esta vazia
+main=chamada para fazer o cadastro
+int main (VOID)=inserido para as `boas praticas de progamacao`
+switch=escolha dado o usuarioo,igual ao if
+break=para a execucao assim que o usuario escolhe uma opcao dada

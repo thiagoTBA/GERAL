@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 28/05/2016 15:07:15 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="bean.Cliente" table="cliente" catalog="livraria" optimistic-lock="version">
+        <id name="clicod" type="java.lang.Integer">
+            <column name="clicod" />
+            <generator class="identity" />
+        </id>
+        <property name="clinome" type="string">
+            <column name="clinome" length="45" not-null="true" />
+        </property>
+        <property name="clinasc" type="date">
+            <column name="clinasc" length="10" not-null="true" />
+        </property>
+        <property name="clirg" type="int">
+            <column name="clirg" not-null="true" />
+        </property>
+        <property name="clicpf" type="int">
+            <column name="clicpf" not-null="true" />
+        </property>
+        <property name="clisangue" type="string">
+            <column name="clisangue" length="45" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

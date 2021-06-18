@@ -1,0 +1,32 @@
+.fucapi {
+      color:#E6D71E;
+      font-family: Broadway, Helvetica, sans-serif;
+      font-size:20px;
+}
+
+form input {
+
+     background-color: #B0B0B0;
+     border: 1px solid #FFFFFF;
+     padding:5px;
+     }
+
+input:focus, textarea:focus
+{
+    background:#FFFFFF;
+    border: 1px solid #FF0000;
+    }
+
+.Button_default {
+   font-family: Arial, sans-serif;
+   font-size:12px;
+   color: #000;
+   font-weight:normal;
+   background-color:#FFFFFF;
+   border-left-color:#CCCCCC;
+   border-right-color:#008000;
+   border-top-color:#800000;
+   border-bottom-color:#000080;
+   border-style solid;
+   border-width: 1px; -mor-border-radius: 4px; -webkit-border-radius:4px;
+   padding: 0 1px 0 1px;}

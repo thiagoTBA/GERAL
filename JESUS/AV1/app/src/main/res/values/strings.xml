@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">AV1</string>
+
+    <string name="nomemus">NOME DA MÚSICA:</string>
+    <string name="compmus">COMPOSITOR:</string>
+    <string name="seriemus">SÉRIE:</string>
+    <string name="cantormus">CANTOR:</string>
+    <string name="generomus">GENERO:</string>
+    <string name="descmus">DESCRIÇÃO:</string>
+    <string name="btnsalvarmus">CADASTRAR MÚSICA</string>
+    <string name="listaMus">LISTAGEM DE MÚSICAS</string>
+    <string name="action_settings">Settings</string>
+</resources>
